@@ -5,7 +5,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class YeniDriver {
-    @Test
+    @Test(groups = "gp1")
     public void testName() {
         Driver.getDriver().get(ConfigReader.getProperty("amazon_url"));
         Driver.closeDriver();

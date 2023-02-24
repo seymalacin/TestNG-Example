@@ -6,7 +6,7 @@ import pages.AmazonPage;
 import utilities.Driver;
 
 public class PageKullanimi {
-    @Test
+    @Test(groups = "gp1")
     public void testName() {
 
         AmazonPage amazonPage = new AmazonPage();

@@ -21,13 +21,11 @@ public class ConfigReader {
             throw new RuntimeException(e);
         }
     }
-
     public static String getProperty(String Key){
         /*
             Test method'undan gönderdiğimiz string key değerini alıp Properties class'ından
          getProperty() methodunu kullanarak bu key'e ait value'u bize getirir.
          */
-
         return  properties.getProperty(Key);
     }
 }
