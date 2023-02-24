@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/seyma/testNGPractice/src/test/java/tests">
+    <test verbose="2" preserve-order="true" name="ilk xml deneme">
         <classes>
-            <class name="tests.PageKullanimi">
-                <methods>
-                    <include name="testName"/>
-                </methods>
-            </class>
             <class name="tests.Practice01">
-                <methods>
-                    <include name="testName"/>
-                </methods>
-            </class>
-            <class name="tests.Practice02">
                 <methods>
                     <include name="testName"/>
                 </methods>

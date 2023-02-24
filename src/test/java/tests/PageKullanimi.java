@@ -22,5 +22,6 @@ public class PageKullanimi {
         assert actualSonuc.contains(arananKelime);
         Driver.closeDriver();
     }
+    }
 
-}
+

@@ -13,17 +13,18 @@ import java.time.Duration;
 
 public class TestBaseCross {
 
-    protected static WebDriver driver;
+    protected WebDriver driver;
+    @Parameters("browser")
     @BeforeClass
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+    public void setUp(@Optional String browser) {
+
+        driver = CrossDriver.getDriver(browser);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
     }
     @AfterClass
     public void tearDown() {
-        //driver.quit();
-
+        CrossDriver.quitDriver();
     }
 }
